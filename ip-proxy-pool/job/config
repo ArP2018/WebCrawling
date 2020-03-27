@@ -1,0 +1,5 @@
+[scheduler]
+# 爬虫任务执行间隔, 单位:分钟
+crawler_interval = 60
+# 代理池刷新间隔, 单位:分钟
+refresh_interval = 10

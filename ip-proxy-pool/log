@@ -1,0 +1,220 @@
+INFO - utils.py - 2019-08-27 15:53:15:  hello
+INFO - utils.py - 2019-08-28 16:53:05:  parameter: http
+INFO - _internal.py - 2019-08-28 16:53:06:  127.0.0.1 - - [28/Aug/2019 16:53:06] "POST / HTTP/1.1" 200 -
+INFO - utils.py - 2019-08-28 16:53:18:  parameter: None
+ERROR - utils.py - 2019-08-28 16:53:18:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/rest_service.py", line 26, in get_https_proxy
+    if proxy_type.lower() == 'https':
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+INFO - _internal.py - 2019-08-28 16:53:18:  127.0.0.1 - - [28/Aug/2019 16:53:18] "POST / HTTP/1.1" 200 -
+INFO - utils.py - 2019-08-28 16:53:36:  parameter: https
+INFO - _internal.py - 2019-08-28 16:53:36:  127.0.0.1 - - [28/Aug/2019 16:53:36] "POST / HTTP/1.1" 200 -
+ERROR - utils.py - 2019-08-29 16:57:51:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 274, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 53, in _crawl_site_1
+    rows = soup.find('div', id='list').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+
+ERROR - utils.py - 2019-08-29 17:00:36:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 274, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 53, in _crawl_site_1
+    rows = soup.find('div', id='list').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+
+ERROR - utils.py - 2019-08-29 17:01:03:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 275, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 54, in _crawl_site_1
+    rows = soup.find('div', id='list').find_all('tr')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+
+INFO - utils.py - 2019-08-29 17:18:54:  Exception occured when crawl website xiladaili.
+ERROR - utils.py - 2019-08-29 17:18:54:  Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x000002AAFB422358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.xiladaili.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002AAFB422358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 277, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 209, in _crawl_site_8
+    resp = requests.get(url, headers=self.header, proxies={'http': 'http://94.177.250.149:80'})
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.xiladaili.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x000002AAFB422358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+INFO - utils.py - 2019-08-29 17:19:12:  Exception occured when crawl website xiladaili.
+ERROR - utils.py - 2019-08-29 17:19:12:  Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x0000027BB7342358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.xiladaili.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000027BB7342358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 277, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 209, in _crawl_site_8
+    resp = requests.get(url, headers=self.header, proxies={'http': 'http://94.177.250.149:80'})
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.xiladaili.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x0000027BB7342358>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+INFO - utils.py - 2019-12-02 14:40:05:  Exception occured when crawl website zhandaye.
+ERROR - utils.py - 2019-12-02 14:40:05:  Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\contrib\pyopenssl.py", line 453, in wrap_socket
+    cnx.do_handshake()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\OpenSSL\SSL.py", line 1907, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\OpenSSL\SSL.py", line 1639, in _raise_ssl_error
+    _raise_current_error()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\OpenSSL\_util.py", line 54, in exception_from_error_queue
+    raise exception_type(errors)
+OpenSSL.SSL.Error: [('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\contrib\pyopenssl.py", line 459, in wrap_socket
+    raise ssl.SSLError('bad handshake: %r' % e)
+ssl.SSLError: ("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.zdaye.com', port=443): Max retries exceeded with url: /dayProxy.html?user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F68.0.3423.2+Safari%2F537.36 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 277, in start_crawl
+    func()
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/crawler.py", line 161, in _crawl_site_6
+    resp = requests.get(main_url, self.header)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.zdaye.com', port=443): Max retries exceeded with url: /dayProxy.html?user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F68.0.3423.2+Safari%2F537.36 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')],)",),))
+

@@ -1,0 +1,28 @@
+testing_01
+time spent: 6342 s
+invoice_count: 352
+captha accuracy:
+actual downloaded: 343
+
+18s per invoice
+除去中间60次因为频繁刷新的等待时间（共3600s），8s per invoice
+
+testing_02
+time spent: 1343.134342432022 s
+invoice_count: 400
+captha accuracy: 46.51%
+actual downloaded: 34
+
+
+testing_03
+time spent: 398.90932536125183 s
+invoice_count: 200
+captha accuracy: 57.78%
+actual download: 22
+
+testing_04
+time spent: 3328.3697378635406 s
+invoice_count: 300
+captha accuracy: 59.27%
+actual downloaded: 298  12s/invoice
+72次刷新频繁提示框

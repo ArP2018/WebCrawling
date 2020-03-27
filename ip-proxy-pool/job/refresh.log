@@ -1,0 +1,30 @@
+INFO - utils.py - 2019-08-27 16:34:52:  Refresh job is starting up at 2019-08-27 16:34:52.
+INFO - utils.py - 2019-08-27 16:34:52:  Refresh job wake up and start next refresh.
+INFO - utils.py - 2019-08-27 16:34:52:  Start refreshing proxy pool.
+ERROR - utils.py - 2019-08-27 16:34:52:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/job/refresh_job.py", line 26, in <module>
+    result = ProxyManager.refresh_proxy_pool()
+  File "C:\Users\evyin\Desktop\DAI\dai-web-crawler\ip-proxy-pool\manager.py", line 74, in refresh_proxy_pool
+    all_proxies = all_https_proxies + all_http_proxies
+TypeError: unsupported operand type(s) for +: 'set' and 'set'
+
+INFO - utils.py - 2019-08-27 16:34:52:  Refresh job failed running, this job will be shutdown.
+INFO - utils.py - 2019-08-27 16:34:52:  Refresh job is ending at 2019-08-27 16:34:52.
+INFO - utils.py - 2019-08-27 16:35:57:  Refresh job is starting up at 2019-08-27 16:35:57.
+INFO - utils.py - 2019-08-27 16:35:57:  Refresh job wake up and start next refresh.
+INFO - utils.py - 2019-08-27 16:35:57:  Start refreshing proxy pool.
+INFO - utils.py - 2019-08-27 16:53:21:  Refresh finished.
+INFO - utils.py - 2019-08-27 16:53:21:  Validation Report: 
+373 proxies are validated, 310 http proxy, 63 https proxy; 
+199 proxies are unavailable and abandoned, 151 http proxy, 48 https proxy
+ERROR - utils.py - 2019-08-27 16:53:21:  Traceback (most recent call last):
+  File "C:/Users/evyin/Desktop/DAI/dai-web-crawler/ip-proxy-pool/job/refresh_job.py", line 31, in <module>
+    interval = cp.get('scheduler', 'refresh_interval')
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\configparser.py", line 697, in read
+    self._read(fp, filename)
+  File "C:\Users\evyin\anaconda3\envs\crawler\lib\configparser.py", line 1015, in _read
+    for lineno, line in enumerate(fp, start=1):
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xac in position 17: illegal multibyte sequence
+
+INFO - utils.py - 2019-08-27 16:53:21:  Refresh job failed running, this job will be shutdown.
+INFO - utils.py - 2019-08-27 16:53:21:  Refresh job is ending at 2019-08-27 16:53:21.

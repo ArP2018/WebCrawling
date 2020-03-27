@@ -1,0 +1,4 @@
+DB_HOST = '10.13.38.20'
+DB_INSTANCE = 'scp'
+DB_USERNAME = 'webcrawler'
+DB_PASSWORD = ''
