@@ -1,0 +1,34 @@
+[websites]
+# 以下网站字母简称是需要爬取的网站，使用字符#来进行注释，一旦注释，则本次执行不会爬取该注释的网站，用于出错以后的单独爬取
+stcn = ['证券时报', 'STCN']
+cnstock = '中国证券网'
+ifeng = '凤凰财经'
+yicai = '第一#财经'
+pc = '人民网'
+ce = '中国经济网'
+ql = '千龙网'
+hexun = '和讯网'
+sina = '新浪财经'
+cnfol = '中金在线'#
+mrjj = '每经网'
+tencent = '腾讯财经'
+souhu = '搜狐财经'
+eastmoney = '东方财富网'
+thsh = '同花顺'
+bjsat = '北京税务局'
+bjgsj = '北京工商局'
+tianyancha = '天眼查'
+
+# 调试参数，使用过程不需更改
+[debug]
+visible = 0
+
+# 天眼查用户登录信息
+[tianyancha]
+username = 18696582150
+password = dttdai123
+
+# 输出文件配置
+[output_path]
+#请配置完整路径 e.g. C:\Crawler\results.xlsx 如使用默认配置'.',结果文件会生成到当前目录，文件名为crawler.xlsx
+file_path = .

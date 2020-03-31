@@ -1,0 +1,13 @@
+[Auth]
+mobile=18696582150
+password=
+
+[Url]
+login_url = https://www.tianyancha.com/login
+search_url = https://www.tianyancha.com/search?key=
+# 法律文书
+lawsuit_url = https://www.tianyancha.com/pagination/lawsuit.xhtml?ps=10&pn={0}&name={1}&_={2}
+# 行政处罚
+punishment_url = https://www.tianyancha.com/pagination/punishmentCreditchina.xhtml?ps=20&pn={0}&id={1}&_={2}
+# 对外投资 （子公司）
+invest_url = https://www.tianyancha.com/pagination/invest.xhtml?ps=30&pn={0}&id={1}&_={2}

@@ -1,0 +1,8 @@
+每个版块的内容如果有出现分页，会调用js的方法gettablist来构造一个分页内容的url
+var url = INDEX_URL+"company_getinfos?"+"unique="+unique+"&companyname="+companyname+"&p="+page+"&tab="+tab+"&box="+box;
+
+根据分析，只有以list结尾的id对应的box才会有分页
+所以针对有分页情况的box，构造url后请求数据
+其他情况直接从详细内容界面来解析
+
+行政处罚还分为工商局 信用中国
